@@ -15,6 +15,8 @@ Wil2=random.randint(1,6)
 
 HP1=random.randint(0,5)
 Pip1=random.randint(0,5)
+BG1=random.randint(0,5)
+BG2=random.randint(0,5)
 
 Bis=random.randint(0,5)
 Coa=random.randint(0,5)
@@ -54,24 +56,89 @@ Dis=["Brave but reckless","Industrious but unimaginative","Inquisitive but stubb
 Col=["chocolate","black","white","tan","grey","blue"]
 Pat=["solid","brindle","patchy","banded","marbled","flecked"]
 
+Str=str(Str1+Str2)
+Dex=str(Dex1+Dex2)
+Wil=str(Wil1+Wil2)
 
+Att = {
+    "Str": Str1+Str2,
+    "Dex": Dex1+Dex2,
+    "Wil": Wil1+Wil2
+}
+
+print()
+
+print("Str=" + str(Att["Str"]))
+print("Dex=" + str(Att["Dex"]))
+print("Wil=" + str(Att["Wil"]))
+
+while True:
+    print("Do you want to swap any of these? [Y/N]")
+    swap=input()
+    if swap == "N" :
+        break
+    if swap == "Y" : 
+        print("What is the first stat you wish to swap? [Str/Dex/Wil]")    
+        swap1=input()
+        if not swap1 in Att.keys():
+            print("Please input Str, Dex, or Wil.")
+            continue
+        else :
+            print("What do you want to swap it with? [Str/Dex/Wil]")
+            swap2=input()
+        if not swap2 in Att.keys():
+            print("Please input Str, Dex, or Wil.")
+            continue
+        else :
+            swapi = Att[swap1]
+            Att[swap1] = Att[swap2]
+            Att[swap2] = swapi
+            break
+    elif swap != "N" : 
+        print("Y or N only please.")
+
+Mat=max(Att["Str"],Att["Dex"],Att["Wil"])
+print()
+
+while True :
+    if Mat <= 9 :
+        print("Would you prefer " + ItemA[BG1][BG2] + "[A] or " + ItemB[BG1][BG2] + "[B]?")
+        pre1=input()
+        if pre1 == "A" :
+            BGC=ItemA[BG1][BG2]
+            break
+        if pre1 == "B" :
+            BGC=ItemB[BG1][BG2]
+            break
+        else : 
+            print("Input A or B")
+            continue
+
+print()
+
+print("What weapon do you choose?")
+Wpn1=input()
+
+print ()
 
 print(name + " the " + Job[HP1][Pip1])
 
 print()
 
-print("Str=" + str(Str1+Str2))
-print("Dex=" + str(Dex1+Dex2))
-print("Wil=" + str(Wil1+Wil2))
+print("Str=" + str(Att["Str"]))
+print("Dex=" + str(Att["Dex"]))
+print("Wil=" + str(Att["Wil"]))
+
 print()
+
 print("HP=" + str(HP1+1))
 
 print()
 
 print("Torches")
 print("Rations")
-print(ItemA[HP1][Pip1])
-print(ItemB[HP1][Pip1])
+print(str(BGC))
+print(str(Wpn1))
 print("Pips=" + str(Pip1+1))
 
 print()
