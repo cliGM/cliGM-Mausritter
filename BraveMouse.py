@@ -100,19 +100,19 @@ while True:
 Mat=max(Att["Str"],Att["Dex"],Att["Wil"])
 print()
 
-while True :
-    if Mat <= 9 :
-        print("Would you prefer " + ItemA[BG1][BG2] + "[A] or " + ItemB[BG1][BG2] + "[B]?")
-        pre1=input()
-        if pre1 == "A" :
-            BGC=ItemA[BG1][BG2]
-            break
-        if pre1 == "B" :
-            BGC=ItemB[BG1][BG2]
-            break
-        else : 
-            print("Input A or B")
-            continue
+while Mat <= 9 :
+    print("Would you prefer " + ItemA[BG1][BG2] + "[A] or " + ItemB[BG1][BG2] + "[B]?")
+    pre1=input()
+    if pre1 == "A" :
+        BGC=ItemA[BG1][BG2]
+        break
+    if pre1 == "B" :
+        BGC=ItemB[BG1][BG2]
+        break
+    else : 
+        print("Input A or B")
+        BGC=""
+        continue
 
 print()
 
@@ -137,8 +137,10 @@ print()
 
 print("Torches")
 print("Rations")
-print(str(BGC))
-print(str(Wpn1))
+if BGC != "" :
+    print(str(BGC))
+if Wpn1 != "" :
+    print(str(Wpn1))
 print("Pips=" + str(Pip1+1))
 
 print()
