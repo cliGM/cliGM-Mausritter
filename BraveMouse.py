@@ -146,6 +146,8 @@ print()
 
 print("Torches")
 print("Rations")
+print(ItemA[HP1][Pip1])
+print(ItemB[HP1][Pip1])
 if BGC != "" :
     print(str(BGC))
 if Wpn1 != "" :
