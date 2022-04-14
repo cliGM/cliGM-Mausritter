@@ -63,6 +63,8 @@ Dis=["Brave but reckless","Industrious but unimaginative","Inquisitive but stubb
 Col=["chocolate","black","white","tan","grey","blue"]
 Pat=["solid","brindle","patchy","banded","marbled","flecked"]
 
+BGC=""
+
 Str=str(Str1+Str2)
 Dex=str(Dex1+Dex2)
 Wil=str(Wil1+Wil2)
@@ -123,7 +125,7 @@ while Mat <= 9 :
 
 print()
 
-print("What weapon do you choose?")
+print("What we﻿apon do you choose?")
 Wpn1=input()
 
 print ()
