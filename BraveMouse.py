@@ -35,7 +35,7 @@ Job = [["Test Subject",   "Kitchen Forager","Cage Dweller", "Hedge Witch",    "L
       [ "Woodcutter",     "Bat Cultist",    "Tin Miner",    "Trash Collector","Wall Rover",   "Merchant"         ],
       [ "Raft Crew",      "Worm Wrangler",  "Sparrow Rider","Sewer Guide",    "Prison Guard", "Fungus Farmer"    ],
       [ "Dam Builder",    "Cartographer",   "Trap Thief",   "Vagabond",       "Grain Farmer", "Message Runner"   ],
-      [" Troubadour",     "Gambler",        "Sap Tapper",   "Bee Keeper",     "Librarian",    "Pauper Noblemouse"]]
+      [ "Troubadour",     "Gambler",        "Sap Tapper",   "Bee Keeper",     "Librarian",    "Pauper Noblemouse"]]
 
 ItemA = [["Spell: Magic Missile","Shield & Jerkin (Light Armour)","Spell: Be Understood", "Spell: Heal","Shield & Jerkin (Light Armour)","Dagger (Light, d6)"],
         [ "Spell: Restore", "Hireling: Loyal Beetle", "Hireling: Drunken Torchbearer","Net", "Hammer (Medium, d6/d8)", "Wire, Spool"       ],
