@@ -3,8 +3,13 @@
 import random
 import sys
 
-name="Agra"
-#name=sys.argv[1]
+#name="Agra"
+
+if len(sys.argv) == 1 :
+    print("Error : Missing Character Name")
+    quit()
+
+name=sys.argv[1]
 
 random.seed(a=name, version=2)
 
